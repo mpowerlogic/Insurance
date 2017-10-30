@@ -9,11 +9,42 @@
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Mpower Insurance</title>
 	<style>
-	
+#ul1 a, #ul2 a{
+color:#405e7c;
+}
+#ul1 a:hover,#ul2 a:hover{
+	color:red;
+}
 #home1 {
 	margin: 50px 0px;
    text-align: center;
-    background-image: url('home-back3.jpg');height: 600px;
+    background-image: url('car.jpg');height: 900px;
+    background-repeat: no-repeat;
+}
+h3{ 
+  color:Blue;
+  font-family: Verdana;
+  }
+ .well-lg{
+    background: white;
+    box-shadow: 1px 2px 5px #000000; 
+    width: 25%;
+     position: absolute;
+
+  
+ 
+ }
+ .btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form-group:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+footer{
+	 position: absolute;
+  bottom: 0px;
+margin: 0px;
 }
 </style>
 </head>
@@ -23,58 +54,77 @@
 	<div class="navbar-header">
 		<a class="navbar-brand" href="#"><img src="logo1.jpg" width="150" height="25" alt="Logo"></a>
 	</div>
-	<ul class="nav navbar-nav">
-		<li class="active"><a href="#">hello1</a></li>
-		<li><a href="#">hello11</a></li>
-		<li><a href="#">hello12</a></li>
-		<li><a href="#">hello13</a></li>
-		<li><a href="#">hello14</a></li>
-		<li><a href="#">hello15</a></li>
+	<ul id="ul1" class="nav navbar-nav">
+		<li class="active" ><a href="#"><b>Insurance</b></a></li>
+		<li><a href="#"><b>Claims</a></b></li>
+		<li><a href="#"><b>Customer Care</b></a></li>
+		<li><a href="#"><b>About</b></a></li>
 	</ul>
-	<ul class="nav navbar-nav navbar-right">
+	<ul id="ul2" class="nav navbar-nav navbar-right">
 		<li><a href="#"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
 		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 	</ul>
 </div>
 </nav>
-<div id="home1" class="container-fluid">
-<p><strong style="color: red;">ITEMS GO HERE</strong></p>
-
-</div>
+<div id="home1" class="container-fluid"><br><br><br>
 <div class="container">
-<div class="row">
+  <div class="well well-lg">
+  <h2 class="text-primary">Welcome</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" placeholder="User ID, Email or Policy Number" required="true">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" required="true">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn">Login</button>
+  </form><br>
+  <div class="text-info">
+  <a href="forgot.html" alt="forgot password?"><u><strong>Need help logging in?</strong></u></a><br>
+   <label style="color: grey;">New user?</label>&emsp;<a href="Registration.html" name="Register for an account" alt="Create new accout"><u><strong>Register for a new account</strong></u></a>
+  </div>
+</div>
+</div>
+</div>
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h1><b>Get insurance for almost anything you need</b></h1><br>
+  <h4>Protection through one of the best insurance companies</h4><br><br><br>
+  <div class="row text-center slideanim">
     <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">NEW1</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Some description</div>
+      <div class="thumbnail">
+        <img src="tab1.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Insurance</strong></p>
+        
       </div>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-danger">
-        <div class="panel-heading">NEW2</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Some description</div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="tab2.jpg" alt="New York" width="400" height="300">
+        <p><strong>Claims</strong></p>
+        
       </div>
     </div>
-    <div class="col-sm-4"> 
-      <div class="panel panel-success">
-        <div class="panel-heading">New3</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Some description</div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="tab3.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>Customer Care</strong></p>
+      
       </div>
     </div>
   </div>
 </div>
+
 <footer class="navbar navbar-default">
-	<div class="container-fluid" >
+	<div class="container-fluid">
 
 		<ul class="nav navbar-nav">
-			<li><a href="#">Page1</a></li>
-			<li><a href="#">Page2</a></li>
-			<li><a href="#">Page3</a></li>
-			<li><a href="#">Page4</a></li>
-			<li><a href="#">Page5</a></li>
+			<li><a href="#">Insurance</a></li>
+			<li><a href="#">Claims</a></li>
+			<li><a href="#">Customer Care</a></li>
+			<li><a href="#">About</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 	<li><a href="#"><span class="fa fa-facebook-official" style="font-size:36px"></span></a></li>
